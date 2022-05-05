@@ -1,0 +1,37 @@
+@use '../02-base/_variables'
+@use '../02-base/_mixin-resposivel'
+
+
+
+.btn
+    width:  512px
+    height: 56px
+    border-radius: 8px
+    font-size: 1.5rem
+    background-color: transparent
+    color: variables.$color-light
+    border: 1px solid variables.$color-light
+    font-weight: 400
+    margin: .5rem
+    @include mixin-resposivel.mobile 
+        width: 80%
+        margin: 1px
+        font-size: 1rem
+        margin-top: 1rem
+    @include mixin-resposivel.tablet
+        width: 80%
+        margin: 1px
+        font-size: 1rem
+        margin-top: 1rem
+
+    
+    
+    
+    
+    &-blue
+        background-color: variables.$blue
+        color: variables.$color-light
+        border: none
+
+
+

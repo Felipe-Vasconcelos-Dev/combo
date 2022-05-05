@@ -1,0 +1,38 @@
+@use '../03-layout/_mixin-layout'
+@use '../02-base/_variables'
+@use '../02-base/_mixin-resposivel'
+
+    
+.footer
+    color: #fff   
+.footer-container
+    @include mixin-layout.alinhar-display
+    @include mixin-layout.center-container
+    
+    align-items: center
+    color: variables.$color-light
+    flex-direction: column
+    @include mixin-resposivel.mobile
+        width: 100%
+        padding: 1rem
+    @include mixin-resposivel.tablet
+        width: 100%
+        padding: 1rem
+    .ul-container
+        @include mixin-layout.alinhar-display
+        margin: 1rem 0
+        margin-top: 2rem
+        @include mixin-resposivel.mobile
+            flex-wrap: wrap
+        
+        li
+            padding-left: 1rem
+            font-size: .8rem
+            color: variables.$color-cinza
+    p
+        margin-top: 1rem
+        text-align:  center
+        font-size: .7rem
+        color: variables.$color-cinza 
+       
+           
